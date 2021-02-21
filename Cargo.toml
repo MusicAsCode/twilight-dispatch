@@ -14,7 +14,7 @@ prometheus = { version = "0.11", default-features = false, features = ["process"
 redis = { version = "0.19", default-features = false, features = ["tokio-comp"] }
 serde = { version = "1.0", default-features = false }
 serde_repr = { version = "0.1", default-features = false }
-simd-json = { version = "0.3", default-features = false }
+simd-json = { version = "0.3", default-features = false, features = ["allow-non-simd"] }
 time = { version = "0.2", default-features = false, features = ["std"] }
 tokio = { version = "1.2", default-features = false, features = ["rt-multi-thread", "macros", "signal", "time"] }
 tracing = { version = "0.1", default-features = false }
